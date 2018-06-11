@@ -1,0 +1,3 @@
+- I am sorry for not being able to complete all the tasks but i didn't have enough time for it , i had to commit my last mission and do this test on the weekend.
+- The Currencies are not ordered in the first page due to API response time : Those currencies are called from different pages and each has a different response time.
+- The given API doesn't provide data for all currencies so some of them might be missing the symbol field or the iso code.
