@@ -1,0 +1,7 @@
+   <ul *ngFor="let row of elements$;let i = index;">
+          	<h2>Code : {{ row.id }}</h2>
+          	<li ><b>Name :</b> {{row.attributes.name}}</li>
+          	<li ><b>Currency_type :</b> {{row.attributes.currency_type}}</li>
+          	<li ><b>Code_iso_numeric3 :</b> {{row.attributes.code_iso_numeric3}}</li>
+			<li ><b>Code_iso_alpha3 :</b> {{row.attributes.code_iso_alpha3}}</li>
+  </ul>

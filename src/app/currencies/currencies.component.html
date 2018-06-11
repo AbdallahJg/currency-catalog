@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <nav class="navbar">
+      <div style="text-align:center;">
+      <input class="form-control" type="text" name="search" [(ngModel)]=$searchString placeholder="Search by currency name :">  
+      </div>  
+      <br><br><br>  
+    </nav>
+      <tbody>
+        <tr *ngFor="let row of elements$;let i = index;">
+        	<ul *ngFor="let c of row |filter : 'id' : $searchString; let i = index;">
+          	<li><a routerLink="/currency/{{c.id}}">{{ c.id }}</a> <br/>
+          <b>Name:</b> : {{c.id}}
+         | <b> Type:</b> : {{c.attributes.currency_type}}
+         | <b> Symbole:</b> : {{c.attributes.symbol}} </li>	
+      </ul>
+        </tr>
+      </tbody>
+  </div>
+</div>
